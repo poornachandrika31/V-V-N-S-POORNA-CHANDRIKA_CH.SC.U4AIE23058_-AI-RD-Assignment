@@ -28,6 +28,9 @@ where
 The objective is to estimate θ, M and X such that the generated curve best matches the provided dataset.
 
 ---
+## Why Differential Evolution?
+
+The objective function is nonlinear and contains exponential and trigonometric components, making gradient-based optimization difficult. Differential Evolution is a global optimization algorithm that efficiently searches the parameter space without requiring an initial guess, making it well suited for this problem.
 
 ## Approach
 
