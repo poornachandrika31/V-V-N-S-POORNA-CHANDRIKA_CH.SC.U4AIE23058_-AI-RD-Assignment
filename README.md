@@ -119,11 +119,13 @@ The optimized curve was also verified using **Desmos**.
 
 # Project Structure
 
+## Project Structure
+
 ```
-.
 ├── plots
 │   ├── comparison.png
-│   └── desmos_result.png
+│   └── desmos_verification.png
+├── comparison_experiment.py
 ├── estimate_parameters.py
 ├── notebook.ipynb
 ├── requirements.txt
