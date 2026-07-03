@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![SciPy](https://img.shields.io/badge/SciPy-Differential%20Evolution-orange)
+![Optimization](https://img.shields.io/badge/Optimization-Global-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 # AI Research & Development Assignment
 ### Parametric Curve Fitting using Differential Evolution
 
