@@ -124,7 +124,7 @@ The optimized curve was also verified using **Desmos**.
 ```
 ├── plots
 │   ├── comparison.png
-│   └── desmos_verification.png
+│   └── desmos_result.png
 ├── comparison_experiment.py
 ├── estimate_parameters.py
 ├── notebook.ipynb
