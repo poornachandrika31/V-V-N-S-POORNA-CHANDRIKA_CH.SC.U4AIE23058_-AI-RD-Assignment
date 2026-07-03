@@ -75,22 +75,22 @@ The estimated parameters closely match the underlying curve, producing an accura
 
 # Optimization Comparison
 
-To validate the robustness of the optimization strategy, two optimization algorithms were evaluated using the same objective function.
+To validate the optimization strategy, an additional experiment was conducted using both **Nelder–Mead** and **Differential Evolution** with the same objective function.
 
-| Method | Mean L1 Error | Runtime (s) | Initial Guess Required |
-|---------|--------------:|------------:|------------------------|
-| Nelder–Mead | **0.021236** | **0.289** | Yes |
-| Differential Evolution | **0.021236** | **2.460** | No |
+| Method | Mean L1 Error | Runtime (s) | Initial Guess Required | Search Strategy |
+|---------|--------------:|------------:|------------------------|-----------------|
+| Nelder–Mead | **0.021236** | **0.233** | Yes | Local Search |
+| Differential Evolution | **0.021236** | **2.633** | No | Global Search |
 
-## Observation
+### Observation
 
-Both optimization methods converged to nearly identical parameter estimates and achieved the same reconstruction error on this dataset.
+Both optimization methods converged to nearly identical parameter estimates and achieved the same reconstruction error for this dataset.
 
-Nelder–Mead completed the optimization faster but required a manually selected initial parameter estimate.
+Although **Nelder–Mead** completed the optimization faster, its performance depends on selecting a suitable initial parameter estimate and may converge to local optima on more challenging problems.
 
-Differential Evolution required more computation time but performed a global search over the parameter space without relying on initialization, making it a more robust choice for nonlinear optimization problems where the optimum is not known beforehand.
+**Differential Evolution** required additional computation time because it explores the parameter space globally. However, it consistently searches for high-quality solutions without requiring an initial guess, making it a more robust optimization strategy for nonlinear parameter estimation.
 
-For this reason, **Differential Evolution** was selected as the final optimization method.
+For these reasons, **Differential Evolution** was selected as the final optimization algorithm for this project.
 
 # Visualization
 
