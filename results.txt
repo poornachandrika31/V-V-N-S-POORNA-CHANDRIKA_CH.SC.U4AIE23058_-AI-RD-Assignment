@@ -1,4 +1,21 @@
-Theta = 29.999557 degrees
-M = 0.030000
-X = 54.999214
-L1 Error = 0.021236
+=========================================
+AI Research & Development Assignment
+Parameter Estimation Results
+=========================================
+
+Optimization Algorithm : Differential Evolution
+Objective Function     : Mean Nearest-Neighbor (L1) Distance
+
+Estimated Parameters
+---------------------
+Theta (θ) : 29.999557 degrees
+M         : 0.030000
+X         : 54.999214
+
+Performance
+---------------------
+Mean L1 Error : 0.021236
+
+=========================================
+Optimization completed successfully.
+=========================================

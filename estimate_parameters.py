@@ -100,11 +100,28 @@ y_pred = (
 # ----------------------------
 # Save Results
 # ----------------------------
-with open("results.txt", "w") as f:
-    f.write(f"Theta = {theta:.6f} degrees\n")
-    f.write(f"M = {M:.6f}\n")
-    f.write(f"X = {X:.6f}\n")
-    f.write(f"L1 Error = {result.fun:.6f}\n")
+with open("results.txt", "w", encoding="utf-8") as f:
+    f.write("=========================================\n")
+    f.write("AI Research & Development Assignment\n")
+    f.write("Parameter Estimation Results\n")
+    f.write("=========================================\n\n")
+
+    f.write("Optimization Algorithm : Differential Evolution\n")
+    f.write("Objective Function     : Mean Nearest-Neighbor (L1) Distance\n\n")
+
+    f.write("Estimated Parameters\n")
+    f.write("---------------------\n")
+    f.write(f"Theta (θ) : {theta:.6f} degrees\n")
+    f.write(f"M         : {M:.6f}\n")
+    f.write(f"X         : {X:.6f}\n\n")
+
+    f.write("Performance\n")
+    f.write("---------------------\n")
+    f.write(f"Mean L1 Error : {result.fun:.6f}\n\n")
+
+    f.write("=========================================\n")
+    f.write("Optimization completed successfully.\n")
+    f.write("=========================================\n")
 
 # ----------------------------
 # Plot
