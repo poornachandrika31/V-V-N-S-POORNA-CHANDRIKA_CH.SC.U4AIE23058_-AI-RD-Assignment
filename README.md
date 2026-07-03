@@ -73,6 +73,25 @@ The estimated parameters closely match the underlying curve, producing an accura
 
 ---
 
+# Optimization Comparison
+
+To validate the robustness of the optimization strategy, two optimization algorithms were evaluated using the same objective function.
+
+| Method | Mean L1 Error | Runtime (s) | Initial Guess Required |
+|---------|--------------:|------------:|------------------------|
+| Nelder–Mead | **0.021236** | **0.289** | Yes |
+| Differential Evolution | **0.021236** | **2.460** | No |
+
+## Observation
+
+Both optimization methods converged to nearly identical parameter estimates and achieved the same reconstruction error on this dataset.
+
+Nelder–Mead completed the optimization faster but required a manually selected initial parameter estimate.
+
+Differential Evolution required more computation time but performed a global search over the parameter space without relying on initialization, making it a more robust choice for nonlinear optimization problems where the optimum is not known beforehand.
+
+For this reason, **Differential Evolution** was selected as the final optimization method.
+
 # Visualization
 
 ## Curve Fitting Result
