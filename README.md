@@ -47,6 +47,15 @@ The solution follows the workflow below:
 
 ---
 
+## Experimental Evaluation
+
+In addition to the final implementation, a separate experiment was conducted to compare two optimization techniques:
+
+- Nelder–Mead (Local Optimization)
+- Differential Evolution (Global Optimization)
+
+The comparison includes reconstruction error, runtime, and optimization characteristics to justify the final algorithm selection.
+
 # Why Differential Evolution?
 
 The optimization problem contains nonlinear exponential and trigonometric terms, resulting in a highly non-convex search space with multiple local minima.
